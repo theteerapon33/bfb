@@ -194,10 +194,7 @@ def summon(to, nama):
     msg.contentMetadata ={'MENTION':'{"MENTIONEES":['+aa+']}','EMTVER':'4'}
     print "[Command] Tag All"
     try:
-       cnt = Message()
-       cnt.text = "จำนวนการแท็ค: " + str(jml) + " คน"
-       cnt.to = msg.to
-       cl.sendMessage(cnt)
+        cl.sendMessage(msg)
     except Exception as error:
        print error
 
